@@ -1,6 +1,6 @@
 
 """
-Link: https://leetcode.com/problems/median-of-two-sorted-arrays/
+Link: https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 
 Problem:
 Given two sorted arrays nums1 and nums2 of size m and n respectively,
