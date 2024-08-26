@@ -7,10 +7,10 @@ Given a string array words, return an array of all characters that show up in al
 (including duplicates). You may return the answer in any order.
 
 """
+from collections import Counter
 
 class Solution:
-    def commonChars(self, words: List[str]) -> List[str]:
-        from collections import Counter
+    def commonChars(self, words: list[str]) -> list[str]:
 
         first_word_cnt = Counter(words[0])
 
@@ -18,7 +18,9 @@ class Solution:
             cur_cnt = Counter(word)
 
             for key in first_word_cnt:
-                first_word_cnt[key] = min(first_word_cnt[key], cur_cnt[key]) #update the key with the min letter found between words
+                #update the key with the min letter found between words
+                first_word_cnt[key] = min(first_word_cnt[key], cur_cnt[key]) 
+                
 
         #now first_word_cnt has key : min_key_ct in all words
         res = [key for key, val in first_word_cnt.items() for _ in range(val) if val > 0]
