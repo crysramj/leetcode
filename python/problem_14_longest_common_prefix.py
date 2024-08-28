@@ -31,10 +31,8 @@ class Solution:
                 min_substring = substring
 
         return (min_substring)
-   
 
 #Test case
-
 # solution = Solution()
 # strs = ["flower","flow","flight"]
 # sol = Solution()
